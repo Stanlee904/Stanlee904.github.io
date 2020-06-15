@@ -1,0 +1,203 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+#body,html{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    background-color: beige;
+}
+#mainNav{
+    box-shadow: none;
+    background-color: transparent;
+    transition: background-color 0.2s ease;
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.navbar-expand{
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+.navbar-expand > .container{
+    flex-wrap: nowrap;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+#mainNav .navbar-brand{
+    color: darkred;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 700;
+}
+.navbar-brand{
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3124rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+a{
+    text-decoration: none;
+    background-color: transparent;
+}
+.navbar-expand .navbar-collapse{
+    display: flex !important;
+    flex-basis: auto;
+}
+.navbar-collapse{
+    flex-grow: 1;
+    align-items: center;
+}
+.navbar-expand .navbar-nav{
+    flex-direction: row;
+}
+.navbar-nav{
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-left: auto !important;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+}
+ul{
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+#mainNav .navbar-nav .nav-item .nav-link{
+    color: darkred;
+    padding: 0 1rem;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: block;
+}
+header.masthead{
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+}
+header{
+ display: block;   
+}
+.container-head{
+    height: 90% !important;
+}
+.main-center{
+    text-align: center !important;
+    height: 70% !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.main-center-div{
+    flex: 0 0 83.3333333333%;
+    max-width: 83.3333333333%;
+    /* position: relative; */
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+header.masthead{
+    font-size: 1.5rem;
+    /* 글자색은 추후변경 예정 */
+    /* color: deepskyblue; */
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+}
+h1{
+    display:block;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.2;
+    font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /* 글자색 추후 변경 예정 */
+    color: black;
+}
+hr.main-center-hr{
+    max-width: 3.25rem;
+    border-width: 0.2rem;
+    border-color: purple;
+    margin-bottom: 1.5rem !important;
+    margin-top: 1.5rem !important;
+}
+hr{
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+.sub-center{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    align-self: baseline !important;
+    flex: 0 0 66.6666666667%;
+    /* max-width: 66.6666666667%; */
+}
+  header.masthead p{
+    font-size: 2rem;
+    /* 글자색 추후 변경 예정 */
+     color: brown;
+    font-weight: 300 !important;
+    margin-bottom: 3rem !important;
+}   
+ p{
+    margin-top:0;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} 
